@@ -2,7 +2,9 @@ import streamlit as st
 st.set_page_config("KU-ML",page_icon="💹",layout='wide')
 import pandas as pd
 import pickle 
-with open("models\model.pkl",'rb') as file:
+import os 
+model_path=os.path.join("models", "model.pkl")
+with open(model_path,'rb') as file:
     model=pickle.load(file)
 def main():
     st.header("KU Machine Learning")
