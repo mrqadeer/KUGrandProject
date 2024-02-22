@@ -1,1 +1,8 @@
-data/*
+/data/
+# Jupyter NB Checkpoints
+.ipynb_checkpoints
+# Pycharm
+.idea
+
+# VS Code
+.vscode/
