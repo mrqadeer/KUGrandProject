@@ -3,7 +3,8 @@ st.set_page_config("KU-ML",page_icon="💹",layout='wide')
 import pandas as pd
 import pickle 
 import os 
-model_path=os.path.join("models", "model.pkl")
+# model_path=os.path.join("models", "model.pkl")
+model_path=os.path.join("models", "xgb_model.pkl")
 with open(model_path,'rb') as file:
     model=pickle.load(file)
 def main():
